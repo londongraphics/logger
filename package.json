@@ -1,0 +1,39 @@
+{
+  "name": "logger",
+  "version": "0.0.4",
+  "description": "logger for node modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "sudo mocha -r ts-node/register dist/**/*.spec.js",
+    "build": "gulp"
+  },
+  "types": "./dist/logger.d.ts",
+  "keywords": [
+    "logger",
+    "winston",
+    "console",
+    "fs"
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.2.3",
+    "@types/express": "^4.17.1",
+    "@types/mocha": "^5.2.7",
+    "@types/moment-timezone": "^0.5.12",
+    "@types/node": "^12.7.11",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-typescript": "^5.0.1",
+    "mocha": "^6.2.1",
+    "ts-loader": "^6.2.0",
+    "ts-node": "^5.0.1",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "moment-timezone": "^0.5.26",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.10.0"
+  },
+  "author": "Tim D'Elia",
+  "license": "MIT"
+}
